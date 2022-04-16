@@ -26,9 +26,9 @@ target 'books_app' do
 
   pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
 
-  pod 'RNFS', :path => '../node_modules/react-native-fs'
-
   pod 'RNFileViewer', :path => '../node_modules/react-native-file-viewer'
+
+  pod 'react-native-netinfo', :path => '../node_modules/@react-native-community/netinfo'
 
   target 'books_appTests' do
     inherit! :complete

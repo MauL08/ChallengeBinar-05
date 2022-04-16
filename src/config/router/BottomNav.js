@@ -18,7 +18,7 @@ import {
   BooksScreen,
   BookmarkScreen,
   SettingScreen,
-} from '../../screens/bottomNav';
+} from '../../screens';
 
 const Tab = createBottomTabNavigator();
 
