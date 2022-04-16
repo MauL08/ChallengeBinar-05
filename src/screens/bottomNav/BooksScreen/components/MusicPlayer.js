@@ -7,8 +7,6 @@ import DocumentPicker from 'react-native-document-picker';
 
 import Color from '../../../../config/utils/color';
 
-const a = 'dsjaiwdiw';
-
 const MusicPlayer = () => {
   // External Sound
   const [musicIndex, setMusicIndex] = useState(0);
