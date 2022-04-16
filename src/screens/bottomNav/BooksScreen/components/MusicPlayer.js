@@ -63,7 +63,12 @@ const MusicPlayer = () => {
 
   // Sound Function
   const playSong = () => {
-    SoundPlayer.playUrl(file.uri);
+    if (type === 'Internal') {
+      SoundPlayer.playUrl(file.uri);
+    }
+    if (type === 'External') {
+      SoundPlayer.playUrl(TRACKS[musicIndex].audioUrl);
+    }
     setMusicStatus('Pause');
   };
 
@@ -101,12 +106,18 @@ const MusicPlayer = () => {
       <Text style={styles.title}>Music Player</Text>
       <View style={styles.typeControl}>
         <TouchableOpacity
-          onPress={() => setType('Internal')}
+          onPress={() => {
+            stopSong();
+            setType('Internal');
+          }}
           style={styles.internalButton}>
           <Text style={styles.buttonText}>Internal</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          onPress={() => setType('External')}
+          onPress={() => {
+            stopSong();
+            setType('External');
+          }}
           style={styles.externalButton}>
           <Text style={styles.buttonText}>External</Text>
         </TouchableOpacity>
