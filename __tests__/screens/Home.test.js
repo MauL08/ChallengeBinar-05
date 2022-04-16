@@ -6,7 +6,6 @@ import { HomeScreen } from '../../src/screens';
 jest.mock('react-native/Libraries/EventEmitter/NativeEventEmitter');
 jest.mock('react-native-share', () => ({}));
 jest.mock('react-native-blob-util', () => ({}));
-jest.mock('@react-navigation/native', () => {});
 
 const component = create(<HomeScreen />);
 
