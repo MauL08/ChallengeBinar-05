@@ -11,7 +11,7 @@ const RecommendBooks = props => {
 
   useEffect(() => {
     if (data.length > 0) {
-      setList(prevState => [...data]);
+      setList([...data]);
     }
   }, [data]);
 
