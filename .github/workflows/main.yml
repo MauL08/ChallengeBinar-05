@@ -12,7 +12,7 @@ jobs:
         run: npm install
         
       - name: Execute Gradle
-        run: chmod +x ./gradlew
+        run: cd android && chmod +x ./gradlew
 
       - name: Build Android Release
         run: cd android && ./gradlew assembleRelease
