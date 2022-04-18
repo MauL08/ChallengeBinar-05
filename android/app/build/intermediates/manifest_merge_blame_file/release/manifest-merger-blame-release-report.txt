@@ -1,0 +1,408 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.books_app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:4:5-67
+11-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.VIBRATE" />
+12-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:5:5-66
+12-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:5:22-63
+13    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+13-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:6:5-80
+13-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:6:22-78
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:7:5-80
+14-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:7:22-78
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:8:5-79
+15-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:8:22-77
+16
+17    <queries>
+17-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:64:5-70:15
+18        <intent>
+18-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:65:7-69:16
+19            <action android:name="android.intent.action.VIEW" />
+19-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:66:9-61
+19-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:66:17-58
+20            <!-- If you don't know the MIME type in advance, set "mimeType" to "*/*". -->
+21            <data android:mimeType="application/pdf" />
+21-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:68:9-52
+21-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:68:15-49
+22        </intent>
+23    </queries>
+24
+25    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+25-->[:react-native-community_netinfo] D:\Code\React_Native\ChallengeBinar-05\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-79
+25-->[:react-native-community_netinfo] D:\Code\React_Native\ChallengeBinar-05\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-76
+26    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Required to access Google Play Licensing -->
+26-->[:react-native-community_netinfo] D:\Code\React_Native\ChallengeBinar-05\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-76
+26-->[:react-native-community_netinfo] D:\Code\React_Native\ChallengeBinar-05\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-73
+27    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+27-->[:react-native-blob-util] D:\Code\React_Native\ChallengeBinar-05\node_modules\react-native-blob-util\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-73
+27-->[:react-native-blob-util] D:\Code\React_Native\ChallengeBinar-05\node_modules\react-native-blob-util\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-70
+28    <!--
+29         Required to keep CPU alive while downloading files
+30        (NOT to keep screen awake)
+31    -->
+32    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required to to download files without a notification -->
+32-->[:react-native-blob-util] D:\Code\React_Native\ChallengeBinar-05\node_modules\react-native-blob-util\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:19:5-68
+32-->[:react-native-blob-util] D:\Code\React_Native\ChallengeBinar-05\node_modules\react-native-blob-util\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:19:22-65
+33    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+33-->[:react-native-blob-util] D:\Code\React_Native\ChallengeBinar-05\node_modules\react-native-blob-util\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:37:5-88
+33-->[:react-native-blob-util] D:\Code\React_Native\ChallengeBinar-05\node_modules\react-native-blob-util\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:37:22-85
+34    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- for android -->
+34-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\akbar\.gradle\caches\transforms-3\33bc54ad3f6bbb91bcabb9f93aacc8aa\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:25:5-82
+34-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\akbar\.gradle\caches\transforms-3\33bc54ad3f6bbb91bcabb9f93aacc8aa\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:25:22-79
+35    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+36    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+37    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+38    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+39    <!-- for Samsung -->
+40    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+40-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:19:5-86
+40-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:19:22-83
+41    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+41-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:20:5-87
+41-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:20:22-84
+42    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+42-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:23:5-81
+42-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:23:22-78
+43    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+43-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:24:5-83
+43-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:24:22-80
+44    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+44-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:27:5-88
+44-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:27:22-85
+45    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+45-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:28:5-92
+45-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:28:22-89
+46    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+46-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:31:5-84
+46-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:31:22-81
+47    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+47-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:34:5-83
+47-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:34:22-80
+48    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+48-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:37:5-91
+48-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:37:22-88
+49    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+49-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:38:5-92
+49-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:38:22-89
+50    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+50-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:39:5-93
+50-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:39:22-90
+51    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+51-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:42:5-73
+51-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:42:22-70
+52    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+52-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:45:5-82
+52-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:45:22-79
+53    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+53-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:46:5-83
+53-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:46:22-80
+54    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+54-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:49:5-88
+54-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:49:22-85
+55    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+55-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:50:5-89
+55-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\akbar\.gradle\caches\transforms-3\a902663d349ad7dce10daaa89fb5471b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:50:22-86
+56
+57    <application
+57-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:10:5-63:19
+58        android:name="com.books_app.MainApplication"
+58-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:11:7-38
+59        android:allowBackup="false"
+59-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:15:7-34
+60        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+60-->[androidx.core:core:1.5.0] C:\Users\akbar\.gradle\caches\transforms-3\540dbfb90b248d7b59cd154497c15f99\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+61        android:icon="@mipmap/ic_launcher"
+61-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:13:7-41
+62        android:label="@string/app_name"
+62-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:12:7-39
+63        android:roundIcon="@mipmap/ic_launcher_round"
+63-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:14:7-52
+64        android:theme="@style/AppTheme"
+64-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:17:7-38
+65        android:usesCleartextTraffic="true" >
+65-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:16:7-42
+66        <activity
+66-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:18:7-28:18
+67            android:name="com.books_app.MainActivity"
+67-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:19:9-37
+68            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+68-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:21:9-86
+69            android:label="@string/app_name"
+69-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:20:9-41
+70            android:launchMode="singleTask"
+70-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:22:9-40
+71            android:windowSoftInputMode="adjustResize" >
+71-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:23:9-51
+72            <intent-filter>
+72-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:24:9-27:25
+73                <action android:name="android.intent.action.MAIN" />
+73-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:25:13-65
+73-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:25:21-62
+74
+75                <category android:name="android.intent.category.LAUNCHER" />
+75-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:26:13-73
+75-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:26:23-70
+76            </intent-filter>
+77        </activity>
+78        <!-- Change the value to true to enable pop-up for in foreground on receiving remote notifications (for prevent duplicating while showing local notifications set this to false) -->
+79        <meta-data
+79-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:30:9-31:44
+80            android:name="com.dieam.reactnativepushnotification.notification_foreground"
+80-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:30:21-97
+81            android:value="false" />
+81-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:31:21-42
+82        <!-- Change the resource name to your App's accent color - or any other color you want -->
+83        <meta-data
+83-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:33:9-34:54
+84            android:name="com.dieam.reactnativepushnotification.notification_color"
+84-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:33:21-92
+85            android:resource="@color/white" /> <!-- or @android:color/{name} to use a standard color -->
+85-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:34:21-52
+86
+87        <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationActions" />
+87-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:36:9-108
+87-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:36:19-105
+88        <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationPublisher" />
+88-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:37:9-110
+88-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:37:19-107
+89        <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver" >
+89-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:38:9-44:20
+89-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:38:19-115
+90            <intent-filter>
+90-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:39:13-43:29
+91                <action android:name="android.intent.action.BOOT_COMPLETED" />
+91-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:40:17-79
+91-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:40:25-76
+92                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+92-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:41:17-82
+92-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:41:25-79
+93                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+93-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:42:17-81
+93-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:42:25-79
+94            </intent-filter>
+95        </receiver>
+96
+97        <service
+97-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:46:9-52:19
+98            android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService"
+98-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:47:13-107
+99            android:exported="false" >
+99-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:48:13-37
+100            <intent-filter>
+100-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:49:13-51:29
+101                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+101-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:50:17-78
+101-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:50:25-75
+102            </intent-filter>
+103        </service>
+104
+105        <provider
+106            android:name="com.vinzscam.reactnativefileviewer.FileProvider"
+106-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:54:9-71
+107            android:authorities="com.books_app.provider"
+107-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:55:9-56
+108            android:exported="false"
+108-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:56:9-33
+109            android:grantUriPermissions="true" >
+109-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:57:9-43
+110            <meta-data
+110-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:58:11-61:13
+111                android:name="android.support.FILE_PROVIDER_PATHS"
+111-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:59:13-63
+112                android:resource="@xml/file_viewer_provider_paths" />
+112-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:60:13-63
+113        </provider>
+114        <provider
+114-->[:react-native-blob-util] D:\Code\React_Native\ChallengeBinar-05\node_modules\react-native-blob-util\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:40:9-48:20
+115            android:name="com.ReactNativeBlobUtil.Utils.FileProvider"
+115-->[:react-native-blob-util] D:\Code\React_Native\ChallengeBinar-05\node_modules\react-native-blob-util\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:41:13-70
+116            android:authorities="com.books_app.provider"
+116-->[:react-native-blob-util] D:\Code\React_Native\ChallengeBinar-05\node_modules\react-native-blob-util\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:42:13-60
+117            android:exported="false"
+117-->[:react-native-blob-util] D:\Code\React_Native\ChallengeBinar-05\node_modules\react-native-blob-util\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:43:13-37
+118            android:grantUriPermissions="true" >
+118-->[:react-native-blob-util] D:\Code\React_Native\ChallengeBinar-05\node_modules\react-native-blob-util\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:44:13-47
+119            <meta-data
+119-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:58:11-61:13
+120                android:name="android.support.FILE_PROVIDER_PATHS"
+120-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:59:13-63
+121                android:resource="@xml/provider_paths" />
+121-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:60:13-63
+122        </provider>
+123        <provider
+123-->[:react-native-image-picker] D:\Code\React_Native\ChallengeBinar-05\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-18:20
+124            android:name="com.imagepicker.ImagePickerProvider"
+124-->[:react-native-image-picker] D:\Code\React_Native\ChallengeBinar-05\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-63
+125            android:authorities="com.books_app.imagepickerprovider"
+125-->[:react-native-image-picker] D:\Code\React_Native\ChallengeBinar-05\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-71
+126            android:exported="false"
+126-->[:react-native-image-picker] D:\Code\React_Native\ChallengeBinar-05\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-37
+127            android:grantUriPermissions="true" >
+127-->[:react-native-image-picker] D:\Code\React_Native\ChallengeBinar-05\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-47
+128            <meta-data
+128-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:58:11-61:13
+129                android:name="android.support.FILE_PROVIDER_PATHS"
+129-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:59:13-63
+130                android:resource="@xml/imagepicker_provider_paths" />
+130-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:60:13-63
+131        </provider>
+132        <provider
+132-->[:react-native-share] D:\Code\React_Native\ChallengeBinar-05\node_modules\react-native-share\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-18:20
+133            android:name="cl.json.RNShareFileProvider"
+133-->[:react-native-share] D:\Code\React_Native\ChallengeBinar-05\node_modules\react-native-share\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-55
+134            android:authorities="com.books_app.rnshare.fileprovider"
+134-->[:react-native-share] D:\Code\React_Native\ChallengeBinar-05\node_modules\react-native-share\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-72
+135            android:exported="false"
+135-->[:react-native-share] D:\Code\React_Native\ChallengeBinar-05\node_modules\react-native-share\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-37
+136            android:grantUriPermissions="true" >
+136-->[:react-native-share] D:\Code\React_Native\ChallengeBinar-05\node_modules\react-native-share\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-47
+137            <meta-data
+137-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:58:11-61:13
+138                android:name="android.support.FILE_PROVIDER_PATHS"
+138-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:59:13-63
+139                android:resource="@xml/share_download_paths" />
+139-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:60:13-63
+140        </provider>
+141
+142        <receiver
+142-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\akbar\.gradle\caches\transforms-3\33bc54ad3f6bbb91bcabb9f93aacc8aa\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:28:9-35:20
+143            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+143-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\akbar\.gradle\caches\transforms-3\33bc54ad3f6bbb91bcabb9f93aacc8aa\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:29:13-78
+144            android:exported="true"
+144-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\akbar\.gradle\caches\transforms-3\33bc54ad3f6bbb91bcabb9f93aacc8aa\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:30:13-36
+145            android:permission="com.google.android.c2dm.permission.SEND" >
+145-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\akbar\.gradle\caches\transforms-3\33bc54ad3f6bbb91bcabb9f93aacc8aa\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:31:13-73
+146            <intent-filter>
+146-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\akbar\.gradle\caches\transforms-3\33bc54ad3f6bbb91bcabb9f93aacc8aa\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:32:13-34:29
+147                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+147-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\akbar\.gradle\caches\transforms-3\33bc54ad3f6bbb91bcabb9f93aacc8aa\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:33:17-81
+147-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\akbar\.gradle\caches\transforms-3\33bc54ad3f6bbb91bcabb9f93aacc8aa\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:33:25-78
+148            </intent-filter>
+149        </receiver>
+150        <!--
+151             FirebaseMessagingService performs security checks at runtime,
+152             but set to not exported to explicitly avoid allowing another app to call it.
+153        -->
+154        <service
+154-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\akbar\.gradle\caches\transforms-3\33bc54ad3f6bbb91bcabb9f93aacc8aa\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:41:9-48:19
+155            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+155-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\akbar\.gradle\caches\transforms-3\33bc54ad3f6bbb91bcabb9f93aacc8aa\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:42:13-82
+156            android:directBootAware="true"
+156-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\akbar\.gradle\caches\transforms-3\33bc54ad3f6bbb91bcabb9f93aacc8aa\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:43:13-43
+157            android:exported="false" >
+157-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\akbar\.gradle\caches\transforms-3\33bc54ad3f6bbb91bcabb9f93aacc8aa\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:44:13-37
+158            <intent-filter android:priority="-500" >
+158-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:49:13-51:29
+159                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+159-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:50:17-78
+159-->D:\Code\React_Native\ChallengeBinar-05\android\app\src\main\AndroidManifest.xml:50:25-75
+160            </intent-filter>
+161        </service>
+162        <service
+162-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\akbar\.gradle\caches\transforms-3\33bc54ad3f6bbb91bcabb9f93aacc8aa\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:49:9-55:19
+163            android:name="com.google.firebase.components.ComponentDiscoveryService"
+163-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\akbar\.gradle\caches\transforms-3\33bc54ad3f6bbb91bcabb9f93aacc8aa\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:50:13-84
+164            android:directBootAware="true"
+164-->[com.google.firebase:firebase-common:19.5.0] C:\Users\akbar\.gradle\caches\transforms-3\a5f2fb6e0e6fab7278e3c8199a106914\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
+165            android:exported="false" >
+165-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\akbar\.gradle\caches\transforms-3\33bc54ad3f6bbb91bcabb9f93aacc8aa\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:51:13-37
+166            <meta-data
+166-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\akbar\.gradle\caches\transforms-3\33bc54ad3f6bbb91bcabb9f93aacc8aa\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:52:13-54:85
+167                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+167-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\akbar\.gradle\caches\transforms-3\33bc54ad3f6bbb91bcabb9f93aacc8aa\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:53:17-119
+168                android:value="com.google.firebase.components.ComponentRegistrar" />
+168-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\akbar\.gradle\caches\transforms-3\33bc54ad3f6bbb91bcabb9f93aacc8aa\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:54:17-82
+169            <meta-data
+169-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\akbar\.gradle\caches\transforms-3\f17bf12b44a0aafd05050e31795ef5e4\transformed\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:28:13-30:85
+170                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+170-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\akbar\.gradle\caches\transforms-3\f17bf12b44a0aafd05050e31795ef5e4\transformed\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:29:17-115
+171                android:value="com.google.firebase.components.ComponentRegistrar" />
+171-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\akbar\.gradle\caches\transforms-3\f17bf12b44a0aafd05050e31795ef5e4\transformed\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:30:17-82
+172            <meta-data
+172-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\akbar\.gradle\caches\transforms-3\450e799d82ae9c3e4fdeb8415fc8982b\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+173                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+173-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\akbar\.gradle\caches\transforms-3\450e799d82ae9c3e4fdeb8415fc8982b\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+174                android:value="com.google.firebase.components.ComponentRegistrar" />
+174-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\akbar\.gradle\caches\transforms-3\450e799d82ae9c3e4fdeb8415fc8982b\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+175            <meta-data
+175-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\akbar\.gradle\caches\transforms-3\1084e891911710c2c943f6c559b3d6da\transformed\jetified-firebase-installations-16.3.5\AndroidManifest.xml:18:13-20:85
+176                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+176-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\akbar\.gradle\caches\transforms-3\1084e891911710c2c943f6c559b3d6da\transformed\jetified-firebase-installations-16.3.5\AndroidManifest.xml:19:17-127
+177                android:value="com.google.firebase.components.ComponentRegistrar" />
+177-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\akbar\.gradle\caches\transforms-3\1084e891911710c2c943f6c559b3d6da\transformed\jetified-firebase-installations-16.3.5\AndroidManifest.xml:20:17-82
+178            <!--
+179                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+180                clients to use it as well, by defining this registrar in their own core/common library.
+181            -->
+182            <meta-data
+182-->[com.google.firebase:firebase-common:19.5.0] C:\Users\akbar\.gradle\caches\transforms-3\a5f2fb6e0e6fab7278e3c8199a106914\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
+183                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+183-->[com.google.firebase:firebase-common:19.5.0] C:\Users\akbar\.gradle\caches\transforms-3\a5f2fb6e0e6fab7278e3c8199a106914\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
+184                android:value="com.google.firebase.components.ComponentRegistrar" />
+184-->[com.google.firebase:firebase-common:19.5.0] C:\Users\akbar\.gradle\caches\transforms-3\a5f2fb6e0e6fab7278e3c8199a106914\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
+185        </service>
+186        <service
+186-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\akbar\.gradle\caches\transforms-3\61c4b96fd6afa09eb1be3604e1af824c\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+187            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+187-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\akbar\.gradle\caches\transforms-3\61c4b96fd6afa09eb1be3604e1af824c\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+188            android:exported="false" >
+188-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\akbar\.gradle\caches\transforms-3\61c4b96fd6afa09eb1be3604e1af824c\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+189            <meta-data
+189-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\akbar\.gradle\caches\transforms-3\61c4b96fd6afa09eb1be3604e1af824c\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+190                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+190-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\akbar\.gradle\caches\transforms-3\61c4b96fd6afa09eb1be3604e1af824c\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+191                android:value="cct" />
+191-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\akbar\.gradle\caches\transforms-3\61c4b96fd6afa09eb1be3604e1af824c\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+192        </service>
+193        <service
+193-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\akbar\.gradle\caches\transforms-3\4221cb86e7c6b389f6af5d025096cf07\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:26:9-30:19
+194            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+194-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\akbar\.gradle\caches\transforms-3\4221cb86e7c6b389f6af5d025096cf07\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:27:13-117
+195            android:exported="false"
+195-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\akbar\.gradle\caches\transforms-3\4221cb86e7c6b389f6af5d025096cf07\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:28:13-37
+196            android:permission="android.permission.BIND_JOB_SERVICE" >
+196-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\akbar\.gradle\caches\transforms-3\4221cb86e7c6b389f6af5d025096cf07\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:29:13-69
+197        </service>
+198
+199        <receiver
+199-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\akbar\.gradle\caches\transforms-3\4221cb86e7c6b389f6af5d025096cf07\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:32:9-34:40
+200            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+200-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\akbar\.gradle\caches\transforms-3\4221cb86e7c6b389f6af5d025096cf07\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:33:13-132
+201            android:exported="false" />
+201-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\akbar\.gradle\caches\transforms-3\4221cb86e7c6b389f6af5d025096cf07\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:34:13-37
+202
+203        <provider
+203-->[com.google.firebase:firebase-common:19.5.0] C:\Users\akbar\.gradle\caches\transforms-3\a5f2fb6e0e6fab7278e3c8199a106914\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
+204            android:name="com.google.firebase.provider.FirebaseInitProvider"
+204-->[com.google.firebase:firebase-common:19.5.0] C:\Users\akbar\.gradle\caches\transforms-3\a5f2fb6e0e6fab7278e3c8199a106914\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
+205            android:authorities="com.books_app.firebaseinitprovider"
+205-->[com.google.firebase:firebase-common:19.5.0] C:\Users\akbar\.gradle\caches\transforms-3\a5f2fb6e0e6fab7278e3c8199a106914\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
+206            android:directBootAware="true"
+206-->[com.google.firebase:firebase-common:19.5.0] C:\Users\akbar\.gradle\caches\transforms-3\a5f2fb6e0e6fab7278e3c8199a106914\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
+207            android:exported="false"
+207-->[com.google.firebase:firebase-common:19.5.0] C:\Users\akbar\.gradle\caches\transforms-3\a5f2fb6e0e6fab7278e3c8199a106914\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:30:13-37
+208            android:initOrder="100" />
+208-->[com.google.firebase:firebase-common:19.5.0] C:\Users\akbar\.gradle\caches\transforms-3\a5f2fb6e0e6fab7278e3c8199a106914\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:31:13-36
+209
+210        <meta-data
+210-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\akbar\.gradle\caches\transforms-3\0e3d0c4f5635e0c3c0cfa0e0064e8f7e\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+211            android:name="com.google.android.gms.version"
+211-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\akbar\.gradle\caches\transforms-3\0e3d0c4f5635e0c3c0cfa0e0064e8f7e\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+212            android:value="@integer/google_play_services_version" />
+212-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\akbar\.gradle\caches\transforms-3\0e3d0c4f5635e0c3c0cfa0e0064e8f7e\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+213    </application>
+214
+215</manifest>
