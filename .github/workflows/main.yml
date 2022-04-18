@@ -28,7 +28,7 @@ jobs:
       - uses: docker://circleci/android:api-29-node
      
       # Runs a single command using the runners shell
-      - name: Unit Test 
+      - name: Install Dependencies
         run: npm install
       
       - name: Cleaning
