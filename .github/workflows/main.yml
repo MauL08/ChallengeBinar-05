@@ -39,5 +39,5 @@ jobs:
           
       - name: Upload to Telegram Bot
         run: |
-          curl -X POST -H 'Content-Type: multipart/form-data' -F "chat_id=${{secrets.TG_CHAT_ID}}" -F text='You're App is Released!' ${{secrets.TG_BOT_TOKEN}}/sendMessage
+          curl -X POST -H 'Content-Type: multipart/form-data' -F "chat_id=${{secrets.TG_CHAT_ID}}" -F text='App is Released!' ${{secrets.TG_BOT_TOKEN}}/sendMessage
           curl -X POST -H 'Content-Type: multipart/form-data' -F "chat_id=${{secrets.TG_CHAT_ID}}" -F document=@/android/app/build/outputs/apk/release/app-release.apk ${{secrets.TG_BOT_TOKEN}}/sendDocument
