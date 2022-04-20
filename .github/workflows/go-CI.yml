@@ -1,0 +1,26 @@
+name: Go CI Project Process
+on:
+  push:
+    branches: [main]
+jobs:
+  check-linter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Test Linter
+        run: npm run lint
+
+  run-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Testing Component
+        run: npm run test

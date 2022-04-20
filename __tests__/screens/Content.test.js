@@ -1,17 +1,12 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
-
 import { BooksScreen } from '../../src/screens';
+import { Component } from '../../src/config/utils/TestComponent';
 
-jest.mock('react-native/Libraries/EventEmitter/NativeEventEmitter');
-jest.mock('react-native-share', () => {});
-jest.mock('react-native-blob-util', () => {});
-jest.mock('@react-navigation/native', () => {});
-
-const component = create(<BooksScreen />);
+const component = create(Component(<BooksScreen />));
 
 describe('should be rendered', () => {
-  test('matching snapshot', () => {
+  test('matching snapshot', async () => {
     expect(component).toMatchSnapshot();
   });
 });

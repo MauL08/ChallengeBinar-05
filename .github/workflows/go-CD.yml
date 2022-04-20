@@ -1,42 +1,28 @@
-name: Build Android
-
+name: Go CD Project Process
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-    
+    branches: [main]
 jobs:
-  build:
+  build-and-send-to-telegram:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-   
+
       - name: Install Dependencies
         run: npm install
-      
-      - name: Make Gradle Executable
+
+      - name: Execute Gradle
         run: cd android && chmod +x ./gradlew
-      
-      - name: Cleaning
-        run: |
-          cd android
-          ./gradlew clean
-          ./gradlew cleanBuildCache
-          cd ..
-          
-      - name: Build
-        run: |
-          cd android
-          ./gradlew assembleRelease
-          cd ..
-          
+
+      - name: Build Android Release
+        run: cd android && ./gradlew assembleRelease
+
       - name: Upload Artifact
         uses: actions/upload-artifact@v1
         with:
           name: release
           path: android/app/build/outputs/apk/release/app-release.apk
-          
+
       - name: Upload to Telegram Bot
         run: |
           cd android/app/build/outputs/apk/release/
