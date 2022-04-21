@@ -11,6 +11,12 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Create Keystore
+        run: keytool -genkeypair -v -storetype PKCS12 -keystore booksapp.keystore -alias booksapp -keyalg RSA -keysize 2048 -validity 10000
+
+      - name: Move Keystore to Android
+        run: mv ./booksapp.keystore ./android/app/booksapp.keystore
+
       - name: Execute Gradle
         run: cd android && chmod +x ./gradlew
 
